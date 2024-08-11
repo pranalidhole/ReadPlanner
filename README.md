@@ -16,10 +16,9 @@ So, ready to embark on your next great read? Let ReadPlanner help you organize, 
 
 ## Demo
 
-[Video Demo](./images/Short-Demo.mov)
-[Main Screen](./images/Main-Screen.png)
-[Authors DB](./images/database_authors.png)
-[Books DB](./images/database_books.png)
+![Main Screen](images/Main-Screen.png)
+![Authors DB](images/database_authors.png)
+![Books DB](images/database_books.png)
 
 ## How to Run?
 
