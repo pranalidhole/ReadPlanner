@@ -24,7 +24,10 @@ So, ready to embark on your next great read? Let ReadPlanner help you organize, 
 ## How to Run?
 
 Before you run, add a MongoDB connection to /server/app.js in line 12 -> mongoose.connect('')
+
 Run the command node app.js in both client and server folders. This will start the application.
+
 Client: http://localhost:3000/
+
 GraphQL Server: http://localhost:4000/graphql
 
