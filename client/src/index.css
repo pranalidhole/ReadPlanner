@@ -26,10 +26,10 @@ body {
   margin: 12px;
   padding:10px;
   border-radius: 4px;
-  border: 1px solid #880E4F;
+  border: 1px solid #5C0FA8;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
   cursor: pointer;
-  color: #880E4F;
+  color:#5C0FA8;
 
 }
 
@@ -39,7 +39,7 @@ form{
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 400px;
+  width: 600px;
 }
 
 form .field{
@@ -63,7 +63,7 @@ form select, form input{
 form button{
   color: #fff;
   font-size: 2em;
-  background: #AD1457;
+  background: #5C0FA8;
   border: 0;
   padding: 0 10px;
   border-radius: 50%;
@@ -79,7 +79,7 @@ form button{
   right: 0;
   width: 40%;
   height: 100%;
-  background: #AD1457;
+  background: #5C0FA8;
   padding: 30px;
   overflow: auto;
   box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
@@ -89,6 +89,24 @@ form button{
 }
 
 
+form .add-author-btn {
+  /* background-color: #007bff; /* Blue background */
+ 
+  color: #fff;
+  font-size: 2em;
+  background: #5C0FA8;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}
+
+form .add-author-btn:hover {
+  background: #5C0FA8; /* Darker blue on hover */
+}
 
 
 

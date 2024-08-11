@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { graphql } from 'react-apollo';
 import { getAuthorsQuery, addBookMutation, getBooksQuery } from '../queries/queries';
 import {flowRight as compose} from 'lodash';
+import AddAuthor from './AddAuthor';
 
 class AddBook extends Component {
 
@@ -36,8 +37,14 @@ class AddBook extends Component {
             refetchQueries: [{query: getBooksQuery}]
         });
     }
+    handleAuthorAdded() {
+        this.setState({ showAddAuthorForm: false });
+        this.props.getAuthorsQuery.refetch(); // Refetch authors to update the list
+    }
+
     render(){
         return(
+            <div>
             <form id="add-book" onSubmit={ this.submitForm.bind(this) }>
                 <div className="field">
                     <label>Book name:</label>
@@ -55,8 +62,14 @@ class AddBook extends Component {
                     </select>
                 </div>
                 <button>+</button>
+                <button type="button" className="add-author-btn" onClick={() => this.setState({ showAddAuthorForm: true })}>A</button>
 
             </form>
+            { this.state.showAddAuthorForm && (
+                    <AddAuthor onAuthorAdded={this.handleAuthorAdded.bind(this)} />
+            )}
+            </div>
+
         );
     }
 }
